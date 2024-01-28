@@ -1,1 +1,18 @@
+.wrapper {
+  margin: 0 auto;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chart {
+  height: calc(150px * var(--numberOfElemnt));
+  width: calc(170px * var(--numberOfElemnt));
+}
+.wrapper {
+  font-weight: 900;
+}
 
+.chart {
+  position: relative;
+}

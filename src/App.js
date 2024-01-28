@@ -47,11 +47,21 @@ function App() {
       },
     ],
   };
+  const piramidData = {
+    fontFamily: "'Inter', sans-serif",
+    data: [
+      { label: "AWARNESS", value: "", bg: "#B19E86", labelColor: "#fff" },
+      { label: "INTEREST", value: "", bg: "#947A59", labelColor: "#fff" },
+      { label: "DESIRE", value: "", bg: "#B19E86", labelColor: "#fff" },
+      { label: "ACTION", value: "", bg: "#947A59", labelColor: "#000" },
+      { label: "LOYALITY", value: "", bg: "#B19E86", labelColor: "#000" },
+    ],
+  };
   return (
     <div style={{ fontFamily: "'Inter', sans-serif" }}>
       <Funnel {...funnelData} />
       <SalesFunnel {...salesFunnelData} />
-      {/* <Piramid /> */}
+      <Piramid {...piramidData} />
     </div>
   );
 }

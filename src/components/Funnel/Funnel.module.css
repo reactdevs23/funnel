@@ -8,7 +8,7 @@
 }
 .chart {
   height: calc(150px * var(--numberOfElemnt));
-  width: calc(125px * var(--numberOfElemnt));
+  width: calc(140px * var(--numberOfElemnt));
 }
 .wrapper {
   font-weight: 900;
