@@ -2,11 +2,12 @@ import Funnel from "./components/Funnel/Funnel";
 import styles from "./App.module.css";
 import SalesFunnel from "./components/SalesFunnel/SalesFunnel";
 import Piramid from "./components/Piramid/Piramid";
+import { useState } from "react";
 
 //  font-family: "Poppins", sans-serif;
 //  font-family: "Inter", sans-serif;
 function App() {
-  const funnelData = {
+  const [funnelData, setFunnelData] = useState({
     fontFamily: "'Inter', sans-serif",
     data: [
       { label: "AWARNESS", value: "", bg: "#4656A1", labelColor: "#fff" },
@@ -14,8 +15,8 @@ function App() {
       { label: "DESIRE", value: "", bg: "#C6CCEE", labelColor: "#000" },
       { label: "ACTION", value: "", bg: "#F4F7FE", labelColor: "#000" },
     ],
-  };
-  const salesFunnelData = {
+  });
+  const [salesFunnelData, setSalesFunnelData] = useState({
     fontFamily: "'Inter', sans-serif",
     primaryColor: "#000",
     secondaryColor: "#fff",
@@ -46,8 +47,8 @@ function App() {
         color: "#fff",
       },
     ],
-  };
-  const piramidData = {
+  });
+  const [piramidData, setPiramidData] = useState({
     fontFamily: "'Inter', sans-serif",
     data: [
       { label: "AWARNESS", value: "", bg: "#B19E86", labelColor: "#fff" },
@@ -56,7 +57,8 @@ function App() {
       { label: "ACTION", value: "", bg: "#947A59", labelColor: "#000" },
       { label: "LOYALITY", value: "", bg: "#B19E86", labelColor: "#000" },
     ],
-  };
+  });
+
   return (
     <div style={{ fontFamily: "'Inter', sans-serif" }}>
       <Funnel {...funnelData} />
